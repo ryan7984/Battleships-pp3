@@ -30,8 +30,8 @@ def random_col(board):
 
     for turn in range(4):
         print("Turn", turn + 1)
-        guess_row = int(input("Guess Row: "))
-        guess_col = int(input("Guess Col: "))
+        guess_row = int(input("Guess Row:\n "))
+        guess_col = int(input("Guess Col: \n"))
 
         if guess_row == ship_row and guess_col == ship_col:
             print("Fair play to ye! You sank my Battle Ship.")
@@ -51,7 +51,3 @@ def random_col(board):
                 print("Game Over")
 
 play_battleships(5)
-
-
-
-
