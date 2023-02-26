@@ -1,6 +1,6 @@
 import random 
 
-
+#Function to crate game board 
 def create_board(size):
     board = []
     for i in range(size):
@@ -8,20 +8,20 @@ def create_board(size):
         board.append(row)
     return board
 
+#Function to print the board to the game 
 def print_board(board):
     for row in board:
         print(" ".join(row))
 
-
+#Function to pick a ship on the board on a row
 def random_row(board):
     return random.randint(0, len(board) - 1)
 
-
-
+#Function to pick a ship on the board on a coloumn
 def random_col(board):
     return random.randint(0, len(board[0]) - 1)
 
-
+#Main function to run the game 
 def play_battleships(size):
     board = create_board(size)
     print("Ahoy there, let's play Battleships")
