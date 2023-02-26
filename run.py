@@ -1,6 +1,6 @@
 import random 
 
-#function to create the game board 
+
 def create_board(size):
     board = []
     for i in range(size):
@@ -8,20 +8,21 @@ def create_board(size):
         board.append(row)
     return board
 
-#function to print the board game 
 def print_board(board):
     for row in board:
         print(" ".join(row))
 
-#function to place ships randomly on a row 
+
 def random_row(board):
     return random.randint(0, len(board) - 1)
 
-#function to place ships randomly on a column 
+
+
 def random_col(board):
     return random.randint(0, len(board[0]) - 1)
 
-#function to run the game
+
+def play_battleships(size):
     board = create_board(size)
     print("Ahoy there, let's play Battleships")
     print_board(board)
@@ -30,8 +31,8 @@ def random_col(board):
 
     for turn in range(4):
         print("Turn", turn + 1)
-        guess_row = int(input("Guess Row:\n "))
-        guess_col = int(input("Guess Col: \n"))
+        guess_row = int(input("Guess Row: "))
+        guess_col = int(input("Guess Col: "))
 
         if guess_row == ship_row and guess_col == ship_col:
             print("Fair play to ye! You sank my Battle Ship.")
@@ -49,5 +50,6 @@ def random_col(board):
             print_board(board)
             if turn == 3:
                 print("Game Over")
-
+  
+                
 play_battleships(5)
