@@ -26,12 +26,12 @@ def play_battleships(size):
     player_name = input("What's your name?")
     player_board = create_board(size)
     computer_board = create_board(size)
-    print("Ahoy there, let's play Battleships" "Can you sink the computers ships" )
+    print("Ahoy there, let's play Battleships. Can you sink the computers battleships" )
     print("This is your board:")
     print_board(player_board)
     
-    computer_ship_row = random_row(board)
-    computer_ship_col = random_col(board)
+    computer_ship_row = random_row(computer_board)
+    computer_ship_col = random_col(computer_board)
 
     for turn in range(4):
         print("Turn", turn + 1)
