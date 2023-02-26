@@ -1,3 +1,17 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random 
+
+#function to create the game board 
+def create_board(size):
+    board = []
+    for i in range (size):
+        row = ["0"] * size
+        board.append(row)
+    return board
+
+#function to print the board game 
+    for row in board:
+        print(" ".join(row))
+
+
+
+
