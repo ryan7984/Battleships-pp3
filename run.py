@@ -37,23 +37,22 @@ def play_battleships(size):
 
         if guess_row == ship_row and guess_col == ship_col:
             print("Fair play to ye! You sank my Battle Ship.")
-            score += 1
             break
         else:
             if guess_row not in range(size) or \
                guess_col not in range(size):
                print("Way off!, thats not even in the sea!")
-               score -= 1
             elif board[guess_row][guess_col] == "X":
-                print ("You guessed that one already.")
-                score -= 1
+                print ("You guessed that one already")
             else:
                 print("Ha ha, you missed my Battleship!")
                 board[guess_row][guess_col] = "X"
-                score -= 1
             print_board(board)
             if turn == 3:
                 print("Game Over")
 
 
 play_battleships(5)
+
+
+
