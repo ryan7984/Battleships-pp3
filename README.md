@@ -56,6 +56,9 @@ Here is a live version of my project
 ## Bugs 
 
 - Error for "board not defined", amended error to computer_board 
+- Amended white space errors 
+- Errors for comment sections rectified by adding spaces after #
+- Indentation errors rectified by carrying out corretc indentation, 4 spaces etc. 
 
 ## Remaining Bugs 
 
