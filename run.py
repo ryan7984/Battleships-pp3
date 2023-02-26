@@ -1,6 +1,6 @@
 import random 
 
-#Function to crate game board 
+#Function to create the game board 
 def create_board(size):
     board = []
     for i in range(size):
@@ -28,12 +28,15 @@ def play_battleships(size):
     print_board(board)
     ship_row = random_row(board)
     ship_col = random_col(board)
-    score = 0
 
     for turn in range(4):
         print("Turn", turn + 1)
-        guess_row = int(input("Guess Row: "))
-        guess_col = int(input("Guess Col: "))
+        try:
+            guess_row = int(input("Guess Row: "))
+            guess_col = int(input("Guess Col: "))
+        except ValueError:
+            print("You can only enter a number")
+            continue
 
         if guess_row == ship_row and guess_col == ship_col:
             print("Fair play to ye! You sank my Battle Ship.")
@@ -43,9 +46,9 @@ def play_battleships(size):
                guess_col not in range(size):
                print("Way off!, thats not even in the sea!")
             elif board[guess_row][guess_col] == "X":
-                print ("You guessed that one already")
+               print("You guessed that one already")
             else:
-                print("Ha ha, you missed my Battleship!")
+                print("You missed my Battleship! You need to go to specsavers")
                 board[guess_row][guess_col] = "X"
             print_board(board)
             if turn == 3:
