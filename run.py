@@ -66,8 +66,7 @@ def play_battleships(size):
             print_board(player_board)
             computer_guess_row = random_row(player_board)
             computer_guess_col = random_col(player_board)
-            if computer_guess_row == computer_ship_row and computer_guess_
-            col == computer_ship_col:
+            if computer_guess_row == computer_ship_row and computer_guess_col == computer_ship_col:
                 print("Oh no! The computer sank your Battleship!")
                 break
             else:
