@@ -9,7 +9,7 @@ Users can try and beat the computer by finding all of the computer's battleships
 Here is a live version of my project 
 
 
-![Website screenshots on different device sizes such as monitor, phone and tablet](./Screenshot-Responsiveness.jpg)
+![Website screenshots on different device sizes such as monitor, phone and tablet](./images/Screenshot-Responsiveness.jpg)
 
 
 ## How to play
@@ -25,7 +25,7 @@ Here is a live version of my project
 
 - The ships are not seen unless they have been hit and sunk. 
 
-![Screenshot of the battleship game on Heroku](./Screenshot-battleship-game.png)
+![Screenshot of the battleship game on Heroku](./images/Screenshot-battleship-game.png)
 
 
 
@@ -34,7 +34,7 @@ Here is a live version of my project
 - The player cannot enter the same coordinates twice. 
 
 
-![Screenshot of input validation when letter entered](./Screenshot-error.png)
+![Screenshot of input validation when letter entered](./images/Screenshot-error.png)
 
 ---------------------------------------------------------------------------
 ## Future Features
@@ -49,7 +49,9 @@ Here is a live version of my project
 ---------------------------------------------------------------------------
 ## Testing
 
+- I have manually tested this project by putting it through the PEP8 Linter, giving it invalid imputs and testing it in the Heroku terminal. 
 
+![Screenshot of pep8 validation checking ](./images/pep8.png)
 
 ## Bugs 
 
