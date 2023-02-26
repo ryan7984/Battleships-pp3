@@ -70,11 +70,9 @@ def play_battleships(size):
                 print("Oh no! The computer sank your Battleship!")
                 break
             else:
-                if computer_guess_row not in range(size) or
-                computer_guess_col not in range(size):
+                if computer_guess_row not in range(size) or computer_guess_col not in range(size):
                     print("The computer guessed outside of the board!")
-                elif computer_board[computer_guess_row]
-                [computer_guess_col] == "X":
+                elif computer_board[computer_guess_row][computer_guess_col] == "X":
                     print("The computer already guessed that one!")
                 else:
                     print("The computer missed!")
@@ -87,5 +85,3 @@ def play_battleships(size):
 
 
 play_battleships(5)
-
-
