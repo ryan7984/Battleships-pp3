@@ -1,31 +1,81 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleships
 
 Welcome ryan7984,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Battle ships is a Python terminal game running in the Code Institute mock terminal on Heroku. 
 
-## Reminders
+Users can try and beat the computer by finding all of the computer's battleships before the computer finds theirs. Each battleship occupies one square on the board 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+Here is a live version of my project 
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+![Website screenshots on different device sizes such as monitor, phone and tablet](./Screenshot-Responsiveness.jpg)
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## How to play
+----------------------------------------------------
+1. The player enters their name. 
+2. There are separate boards for the player and the computer. 
+3. The player and computer take turns guessing where each others ships are on the board to sink each others ships.
+4. The player gets 4 attempts after that the player is notified the game is over. 
+5. The player/computer that sinks all of their opponents ships within four attempts wins. 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+----------------------------------------------------------------------------
+## Features 
 
-Connect your GitHub repository and deploy as normal.
+- The ships are not seen unless they have been hit and sunk. 
 
-## Constraints
+![Screenshot of the battleship game on Heroku](./Screenshot-battleship-game.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+
+- The player cannot enter coordinates outside the size of the grid. 
+- The player must enter numbers/integers not letters etc.
+- The player cannot enter the same coordinates twice. 
+
+
+![Screenshot of input validation when letter entered](./Screenshot-error.png)
+
+---------------------------------------------------------------------------
+## Future Features
+
+- Graphics
+- Difficulty levels
+- Leaderboard
+- Sound effects
+- Multiplayer option
+- Tutorial 
+
+---------------------------------------------------------------------------
+## Testing
+
+
+
+## Bugs 
+
+- Error for "board not defined", amended error to computer_board 
+
+## Remaining Bugs 
+
+- No remaining bugs 
+
+## Remaining Bugs 
+
+## Deployment
+The project was deployed using Code Intitutes mock terminal Heroku.
+
+- Steps for deployment:
+
+ 1. Create a Heroku account. 
+ 2. Fill out the form 
+ 3. Click on create new app on the dashboard. 
+ 4. Name the app and select Europe as Region
+ 5. Under the option deploy Github as the deployment method and link Heroku to 
+    you prefered github repository by the repositorys name in github. 
+ 6. Select settings and add a Config Var .The key is PORT and the value is 8000.
+ 7. Click on deploy branch and when this process has finished click on Open App
+
+## Credits 
+
+As well as using my course material and also found youtube channles usefull such as freeCodecamp.org and programming with Mosh.
+
